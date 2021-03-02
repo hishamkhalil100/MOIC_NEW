@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OrdersAdmission" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BooksAdmissionLib.OverridedForServices" />
+      <xsd:import schemaLocation="http://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOrdersAdmission_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_OrdersListNeedISBN_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrdersListNeedISBN" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_OrdersListNeedISBN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrdersListNeedISBNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_OrdersListNeedDepositNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:OrdersListNeedDepositNo" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_OrdersListNeedDepositNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OrdersListNeedDepositNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetPrintAdmissionInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrintAdmissionInfo" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetPrintAdmissionInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPrintAdmissionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetCountries_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountries" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetCountries_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetBookTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookTypes" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetBookTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBookTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetDeptISBNByAdmissionNO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptISBNByAdmissionNO" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetDeptISBNByAdmissionNO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeptISBNByAdmissionNOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetStatusAdmissionNO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusAdmissionNO" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetStatusAdmissionNO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStatusAdmissionNOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetCertbyAdmissionNO_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCertbyAdmissionNO" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetCertbyAdmissionNO_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCertbyAdmissionNOResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetRegisterBookKFNL_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisterBookKFNL" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_GetRegisterBookKFNL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRegisterBookKFNLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_PropertyChanged_InputMessage">
+    <wsdl:part name="parameters" element="tns:PropertyChanged" />
+  </wsdl:message>
+  <wsdl:message name="IOrdersAdmission_PropertyChanged_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PropertyChangedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOrdersAdmission">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/GetData" message="tns:IOrdersAdmission_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/GetDataResponse" message="tns:IOrdersAdmission_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrdersListNeedISBN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/OrdersListNeedISBN" message="tns:IOrdersAdmission_OrdersListNeedISBN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/OrdersListNeedISBNResponse" message="tns:IOrdersAdmission_OrdersListNeedISBN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OrdersListNeedDepositNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/OrdersListNeedDepositNo" message="tns:IOrdersAdmission_OrdersListNeedDepositNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/OrdersListNeedDepositNoResponse" message="tns:IOrdersAdmission_OrdersListNeedDepositNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintAdmissionInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/GetPrintAdmissionInfo" message="tns:IOrdersAdmission_GetPrintAdmissionInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/GetPrintAdmissionInfoResponse" message="tns:IOrdersAdmission_GetPrintAdmissionInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/GetCountries" message="tns:IOrdersAdmission_GetCountries_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/GetCountriesResponse" message="tns:IOrdersAdmission_GetCountries_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/GetBookTypes" message="tns:IOrdersAdmission_GetBookTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/GetBookTypesResponse" message="tns:IOrdersAdmission_GetBookTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptISBNByAdmissionNO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/GetDeptISBNByAdmissionNO" message="tns:IOrdersAdmission_GetDeptISBNByAdmissionNO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/GetDeptISBNByAdmissionNOResponse" message="tns:IOrdersAdmission_GetDeptISBNByAdmissionNO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusAdmissionNO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/GetStatusAdmissionNO" message="tns:IOrdersAdmission_GetStatusAdmissionNO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/GetStatusAdmissionNOResponse" message="tns:IOrdersAdmission_GetStatusAdmissionNO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCertbyAdmissionNO">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/GetCertbyAdmissionNO" message="tns:IOrdersAdmission_GetCertbyAdmissionNO_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/GetCertbyAdmissionNOResponse" message="tns:IOrdersAdmission_GetCertbyAdmissionNO_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterBookKFNL">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/GetRegisterBookKFNL" message="tns:IOrdersAdmission_GetRegisterBookKFNL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/GetRegisterBookKFNLResponse" message="tns:IOrdersAdmission_GetRegisterBookKFNL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PropertyChanged">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOrdersAdmission/PropertyChanged" message="tns:IOrdersAdmission_PropertyChanged_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOrdersAdmission/PropertyChangedResponse" message="tns:IOrdersAdmission_PropertyChanged_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOrdersAdmission" type="tns:IOrdersAdmission">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrdersListNeedISBN">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/OrdersListNeedISBN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OrdersListNeedDepositNo">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/OrdersListNeedDepositNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrintAdmissionInfo">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/GetPrintAdmissionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountries">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/GetCountries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBookTypes">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/GetBookTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeptISBNByAdmissionNO">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/GetDeptISBNByAdmissionNO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatusAdmissionNO">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/GetStatusAdmissionNO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCertbyAdmissionNO">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/GetCertbyAdmissionNO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRegisterBookKFNL">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/GetRegisterBookKFNL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PropertyChanged">
+      <soap:operation soapAction="http://tempuri.org/IOrdersAdmission/PropertyChanged" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrdersAdmission">
+    <wsdl:port name="BasicHttpBinding_IOrdersAdmission" binding="tns:BasicHttpBinding_IOrdersAdmission">
+      <soap:address location="http://services.media.gov.sa/KFNL/OrdersAdmission.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

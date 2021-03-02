@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="29145259-ba47-41b1-aa43-f8bcee748ac5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://services.media.gov.sa/KFNL/ordersadmission.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OrdersAdmission1.wsdl" MetadataType="Wsdl" ID="592ad34f-40a7-4bf2-a8af-1fc53dbeedf0" SourceId="1" SourceUrl="https://services.media.gov.sa/KFNL/OrdersAdmission.svc?wsdl" />
+    <MetadataFile FileName="OrdersAdmission5.xsd" MetadataType="Schema" ID="e0f1ac2b-bdaa-47c4-98be-cf188748afbc" SourceId="1" SourceUrl="https://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd1" />
+    <MetadataFile FileName="OrdersAdmission52.xsd" MetadataType="Schema" ID="138536ed-ecb2-49a4-9aa9-82c5d8bf9127" SourceId="1" SourceUrl="https://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd0" />
+    <MetadataFile FileName="OrdersAdmission1.disco" MetadataType="Disco" ID="3147b865-4ba6-4ccb-99ff-8aeecb3bb58f" SourceId="1" SourceUrl="https://services.media.gov.sa/KFNL/OrdersAdmission.svc?disco" />
+    <MetadataFile FileName="OrdersAdmission53.xsd" MetadataType="Schema" ID="7aefa73d-efd1-4a0a-99ba-07705a2b7a22" SourceId="1" SourceUrl="https://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd4" />
+    <MetadataFile FileName="OrdersAdmission54.xsd" MetadataType="Schema" ID="bf8345d2-b4c9-4175-a3e6-8a6cb963650c" SourceId="1" SourceUrl="https://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd2" />
+    <MetadataFile FileName="OrdersAdmission55.xsd" MetadataType="Schema" ID="a1588a49-1f56-4c7c-8bb5-19c1ad4188e0" SourceId="1" SourceUrl="https://services.media.gov.sa/KFNL/OrdersAdmission.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
