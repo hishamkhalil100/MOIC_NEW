@@ -392,7 +392,7 @@
                                                             <div class="checkbox-list">
                                                                 <label for="ckConfermation">
                                                                      <input id="ckConfermation" runat="server" type="checkbox" placeholder=""  required="required" />
-                                                                    أتعهد بإيداع نسختين من العمل في مكتبة الملك فهد الوطنية فور الانتهاء من طباعته بالإضافة إلى ايداع نسخة إلكترونية من العمل مخزنة على قرص ( سي دي ) <a  title="Get some foo!" id="hrefDetails">للمزيد اضغط هنا</a>
+                                                                    أتعهد بإيداع نسختين من العمل في مكتبة الملك فهد الوطنية فور الانتهاء من طباعته بالإضافة إلى ايداع نسخة إلكترونية من العمل مخزنة على قرص ( سي دي ) <a  id="hrefDetails">للمزيد اضغط هنا</a>
                                                                 </label>
                                                                 <label id="lblDetails" style="visibility:hidden;color:darkred">
                                                                     يعاقب من يخالف أحكام هذا النظام بغرامة لاتتجاوز ثلاثة الاف ريال مع الزامه بايداع النسخ المطلوبة من العمل وفقا لهذا النظام

@@ -607,6 +607,27 @@
                                                         <div class="col-md-4">
                                                             <input id="txtDepEmail" runat="server" type="email" placeholder="" class="form-control" required="required"  maxlength="254"/>
                                                             <span class="help-block"></span>
+                                                        
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">
+                                                            إقرار
+                                                                <span class="required">* </span>
+                                                        </label>
+                                                        <div class="col-md-4">
+                                                            <div class="checkbox-list">
+                                                                <label for="ckConfermation">
+                                                                     <input id="ckConfermation" runat="server" type="checkbox" placeholder=""  required="required" />
+                                                                    أتعهد بإيداع نسختين من العمل في مكتبة الملك فهد الوطنية فور الانتهاء من طباعته بالإضافة إلى ايداع نسخة إلكترونية من العمل مخزنة على قرص ( سي دي ) <a  id="hrefDetails">للمزيد اضغط هنا</a>
+                                                                </label>
+                                                                <label id="lblDetails" style="visibility:hidden;color:darkred">
+                                                                    يعاقب من يخالف أحكام هذا النظام بغرامة لاتتجاوز ثلاثة الاف ريال مع الزامه بايداع النسخ المطلوبة من العمل وفقا لهذا النظام
+                                                                </label>
+                                                            </div>
+                                                           
+                                                            <span class="help-block"></span>
                                                             <div class="g-recaptcha" data-sitekey="6LfSaHcUAAAAAC3PhpICujn4KlT4TY3P0Faz9O6A" ></div>
                                                         </div>
                                                     </div>
@@ -732,6 +753,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 }
 
             };
+        </script>
+        <script>
+            var hrefDetails = document.getElementById('hrefDetails')
+            hrefDetails.onclick = showDetails
+
+            function showFoo() {
+                var aDetails = document.getElementById('aDetails')
+                if (aDetails.style.visibility == "hidden")
+                    aDetails.style.visibility = "visible"
+                else 
+                    aDetails.style.visibility = "hidden"
+                    return false;
+                }
         </script>
     </div>
 </body>
