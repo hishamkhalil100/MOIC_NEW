@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MOIC_NEW", ".", "{F666E6BA-C9FE-4A84-B59D-496C1D25FEB4}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_36703"
+		Debug.AspNetCompiler.PhysicalPath = "..\MOIC_NEW\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_36703\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_36703"
+		Release.AspNetCompiler.PhysicalPath = "..\MOIC_NEW\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_36703\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "36703"
+		SlnRelativePath = "..\MOIC_NEW\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F666E6BA-C9FE-4A84-B59D-496C1D25FEB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F666E6BA-C9FE-4A84-B59D-496C1D25FEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65AE2FBF-AB8F-48F3-9274-AD7AD12C08DB}
+	EndGlobalSection
+EndGlobal
